@@ -1,0 +1,17 @@
+﻿@model QuestionareApp.Models.QuestionItem
+
+@{
+    ViewBag.Title = "ViewQuestion";
+}
+
+<h2>Questionare Page</h2>
+
+<h3>1. @Model.strQuestion</h3>
+
+    @{ foreach (string answers in Model.strAnswerData)
+        {
+        <p>@answers</p> 
+        }
+    }
+
+
